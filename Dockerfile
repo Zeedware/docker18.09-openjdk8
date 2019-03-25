@@ -22,3 +22,5 @@ RUN set -x \
 	&& apk add --no-cache nss \
 		openjdk8="$JAVA_ALPINE_VERSION" \
 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
+
+EXPOSE 2375
